@@ -23,4 +23,21 @@ class Solution {
             }
         }
     }
+
+    public static void main(String[] args) {
+        // Correct initialization of 2D array
+        int[][] matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+        
+        // Create an instance of Solution to call the non-static method
+        Solution sol = new Solution();
+        sol.setZeroes(matrix);
+        
+        // Print the modified matrix
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }
